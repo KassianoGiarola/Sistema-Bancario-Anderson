@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "windows: Debug no terminal do Cursor",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/outDebug.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "avoidWindowsConsoleRedirection": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+      "preLaunchTask": "C/C++: build active file",
+      "internalConsoleOptions": "neverOpen",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/_repos/C++",
+      "program": "c:/_repos/C++/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
